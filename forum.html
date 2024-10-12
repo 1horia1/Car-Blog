@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autovlog</title>
+    <meta name="autor" content="Diaconu Horia">
+    <meta name="description" content="Cate ceva despre acest site">
+    <link rel="stylesheet" href="forum.css" type="text/css">
+    <link rel="icon" href="favicon_(2).ico" type="image/x-icon">
+    
+    
+</head>
+<body>
+    <header>
+  <H1>AUTOVLOG</H1>
+    <!--trebuie sa inlocuiesc cu nav-->
+    <nav class="meniu" id="mymeniu">
+        
+        <a href="Home.html" class="item">Home</a>
+        <a href="news.html" class="item">News</a>
+        <a href="contact.html" class="item">Forum</a>
+        <a href="about_me.html" class="item">About</a>
+        
+    </nav>
+</header>
+<main>
+
+    <div id="content">
+        <h2>Bine ai venit, <span id="user-name"></span>! Ca sa raspunzi si sa pui o intrebare , te rugam sa scrii si sa spui cui te adresezi .Pentru a incepe scrie comanda /enter + username ul tau</h2>
+    </div>
+    <form class="das">
+        <label for="msj">text:</label>
+        <input 
+            type="text"
+            id="msj"
+            required
+            minlength="3"
+            maxlength="30"
+            size="40"
+            placeholder="aici scrii mesajul tau"
+            pattern="^[A-Za-z0-9? ]+$"
+        />
+    </form>
+</main>
+<div class="buton">
+ <button id="logout-button">Logout</button>
+ <button id="post">Pune nesaj</button>
+</div>
+<div id="mesaje">
+</div> <script type="text/javascript" src="profile.js"></script>
+</body>
+<!-- sa adaug butonul de insta care dau hover, sa se roteasca si mareasca si o animatie totodata nu uita de selector ncopii-->
